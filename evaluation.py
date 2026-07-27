@@ -263,14 +263,12 @@ def main():
     if DEBUG:
         sys.argv = [sys.argv[0]] + [
             "--gold_task1", "/tmp/ntcir19_fehu/dataset/gold_labels/test/test_article_human_values.json",
+            "--pred_task1a", "/tmp/ntcir19_fehu/dataset/evaluation_test_data_examples/pred/task1/pred_task1a.json",
+            "--pred_task1b", "/tmp/ntcir19_fehu/dataset/evaluation_test_data_examples/pred/task1/pred_task1b.json",
+            "--pred_task2a", "/tmp/ntcir19_fehu/dataset/evaluation_test_data_examples/pred/task2/pred_task2a.json",
             "--gold_task2", "/tmp/ntcir19_fehu/dataset/gold_labels/test/test_subevent_human_values.json",
-
-            "--pred_task1a", "/tmp/ntcir19_fehu/team4/task1/pred_task1a.json",
-            "--pred_task1b", "/tmp/ntcir19_fehu/team4/task1/pred_task1b.json",
-            # "--pred_task2a", "/tmp/ntcir19_fehu/team1/model_predictions/task2/pred_task2a.json",
-            # "--pred_task2b", "/tmp/ntcir19_fehu/team1/model_predictions/task2/pred_task2b.json",
-
-            "--out", "/tmp/ntcir19_fehu/team4/output/evaluation_results.txt",
+            "--pred_task2b", "/tmp/ntcir19_fehu/dataset/evaluation_test_data_examples/pred/task2/pred_task2b.json",
+            "--out", "/tmp/ntcir19_fehu/output/evaluation_results.txt",
         ]
 
     args = ap.parse_args()
